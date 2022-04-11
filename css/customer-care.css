@@ -1,0 +1,110 @@
+@charset "UTF-8";
+.customer-care-container {
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 100px;
+    background-color: #fff;
+}
+
+.customer-care-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.customer-care-image {
+    flex: 50%;
+    text-align: center;
+}
+
+.customer-care-form form {
+    flex: 50%;
+}
+
+.customer-care-image img {
+    text-align: center;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+}
+
+.customer-care-form input,
+.customer-care-form textarea,
+.customer-care-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    font-family: chivo, Verdana, Geneva, sans-serif;
+}
+
+.customer-care-form textarea {
+    height: 200px;
+    resize: none;
+}
+
+.customer-care-form input[type="submit"] {
+    background-color: #9c009c;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.customer-care-form input[type="submit"]:hover {
+    background-color: #800080;
+}
+
+.customer-care-form input[type="text"]:focus,
+textarea:focus,
+select {
+    outline: none;
+}
+
+@media only screen and (max-width: 599px) {
+    .customer-care-container {
+        margin-top: 50px;
+    }
+    .customer-care-form form,
+    .customer-care-image {
+        flex: 100%;
+    }
+    .customer-care-image {
+        order: -1;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .customer-care-container {
+        margin-top: 50px;
+    }
+    .customer-care-form form,
+    .customer-care-image {
+        flex: 100%;
+    }
+    .customer-care-image {
+        order: -1;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-us-container {
+        margin-top: 50px;
+    }
+    .customer-care-form form,
+    .customer-care-image {
+        flex: 50%;
+    }
+    .customer-care-image {
+        order: 1;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .customer-care-container {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {}
